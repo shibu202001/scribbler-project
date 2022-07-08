@@ -1,0 +1,21 @@
+for command line:
+git config --global user.email"@gmail.com"
+
+git config --global user.name"user name"
+
+1- touch .gitignore
+
+2- git init
+
+3- git add .
+
+4-git commit -m "initial commit"
+
+5- git status # just to see
+
+6- ssh-keygen -t ed25519 -C "write your email"
+
+7- tail <path to id_rsa.pub># add this key GitHub account git remote add 
+    add origin <ssh url.git>
+
+8- git push origin master
