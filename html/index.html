@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+
+<!-- in my  system,external css and external js was not working.
+  so i was using internal css and js-->
+
+
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+<style>
+
+  
+     body {
+    background: url("backgroundshibu.jpg") no-repeat center fixed; 
+     background-size: cover;
+      height: 100%;
+       overflow: hidden;
+   }
+    .logo-title{
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    color: #112fb4;
+    text-decoration: none;
+    margin-left: 10px;
+  
+  }
+  .middleText{
+    color: black;
+    font-family: 'Marck Script', cursive;
+    margin-left: 10px;
+  }
+     .modal-content1 p{
+          display: block;
+          font-family: 'Oswald', sans-serif;
+          text-align: center;
+          padding:0px;
+          margin:0px;
+        }
+  
+  /* cyrillic */
+  @font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'), url(https://fonts.gstatic.com/s/marckscript/v8/nwpTtK2oNgBA3Or78gapdwuyzCg_WMM.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'), url(https://fonts.gstatic.com/s/marckscript/v8/nwpTtK2oNgBA3Or78gapdwuyxig_WMM.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'), url(https://fonts.gstatic.com/s/marckscript/v8/nwpTtK2oNgBA3Or78gapdwuyyCg_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://fonts.gstatic.com/s/satisfy/v8/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  .shibu
+  {
+  float:right;
+  }
+  #myBtn
+  {
+  background-color:#0000ff;
+  color:white;
+  width:80px;
+  padding:7px;
+  border:none;
+  }
+  #myBtn1
+  {
+  background-color:#0000ff;
+  color:white;
+  width:80px;
+  padding:7px;
+  border:none;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal1{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 320px;
+    height:480px;
+    font-family:  'Oswald', sans-serif;
+  }
+  .modal-content1{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 320px;
+    height:340px;
+    font-family:  'Oswald', sans-serif;
+  }
+  
+  .value
+  {
+    width:320px;
+    height:35px;
+  }
+  label
+  {
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .modal-content h1{
+    text-align: center;
+    padding:0px;
+    margin-bottom: 3px;
+  
+  }
+  .modal-content1 h1{
+    text-align: center;
+    padding:0px;
+    margin-bottom: 3px;
+  }
+  
+  
+  label{
+    font-weight:500;
+  }
+  input{
+    width:300px;
+    height: 22px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .value{
+    background-color: #5eb762;
+    border:#5eb762 ;
+    color: white;
+    font-weight: bolder;
+  }
+  .k
+  {
+    background-color: #f1f1f1;
+    border: #f1f1f1;
+    padding:9px;
+  }
+  
+  .close {
+  
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*
+  index.css
+
+*/
+  
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  .modal2{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .q
+  {
+    padding:9px;
+    margin-bottom: 50px;
+    font-weight:bolder;
+    background-color:#cfb53b;
+    border: 1px white;
+  }
+  a
+  { color: inherit; 
+    text-decoration:none;
+  } 
+  .modal-content2{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 960px;
+    height:500px;
+    font-family:  'Oswald', sans-serif;
+  }
+  .value2
+  {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5eb762;
+    border:#5eb762 ;
+    color: white;
+    font-weight: bolder;
+  }
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+.modal-content2 p{
+  text-align: center;
+  padding:0px;
+  font-size:40px;
+  margin:0%;
+  font-family: 'Lato', sans-serif;
+}
+.close1 {
+
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myBtn13
+{
+font-size: 15px;
+font-weight: 500;
+border: none;
+color: blue;
+background-color: white;
+cursor: pointer;
+}
+
+</style>
+</head>
+<body img src="background.jpg">
+    <header>
+        <a  class="logo-title">ScriBBler</a>
+        <span class="shibu">
+            <button id="myBtn">Sign Up</button>
+              <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                 <form>
+                  <h1>Get Started</h1>
+                  <hr>
+                  <label for="fname">Full Name:</label><br>
+                  <input class="k" type="text" id="fname" name="fname" placeholder="Enter Full Name" required><br><br>
+
+                  <label for="Username">Username:</label><br>
+                  <input type="text" class="k" id="Username" name="Username" placeholder="Enter Username"  required><br><br>
+
+                  <label for="password">Password:</label><br>
+                  <input class="k" type="password" id="password" name="password" placeholder="Enter Password"  required><br><br>
+
+                  <label for="password1">Confirm Password:</label><br>
+                  <input class="k" type="password" id="password1" name="password1" placeholder="Confirm Password"  required><br><br>
+                  
+                  <input type="submit" class="value" value="Sign Up">
+                 </form> 
+              </div>
+              </div>
+
+              <button id="myBtn1">Sign In</button>
+              <div id="myModal1" class="modal1">
+                <div class="modal-content1">
+                  <span class="close">&times;</span>
+                  <form>
+                    <h1>Welcome Back!</h1>
+                    <hr>
+                    <label for="Username">Username:</label><br>
+                  <input type="text" class="k" id="Username" name="Username" placeholder="Enter Username"  required><br><br>
+  
+                    <label for="password">Password:</label><br>
+                    <input class="k" type="password" id="password" name="password" placeholder="Enter Password"  required><br><br>
+  
+                    <input type="submit" class="value" value="Sign In">
+                    <center><p style="display: inline;">Not a member ?<button id="myBtn13">Sign Up</button></p></center>
+                  </form>
+                   
+                </div>
+              </div>
+
+              
+              <div id="myModal2" class="modal2">
+                <div class="modal-content2">
+                  <span class="close">&times;</span>
+                    <form>
+                    <p>Pen Your Post</p>
+
+                     <label for="title">Title:</label><br>
+                     <input type="text" class="k" id="Username" name="title"   required><br><br>
+  
+                     <label for="textarea">Content:</label><br>
+                     <textarea id="w3review" class="k" id="textarea" name="w3review" rows="20" cols="130"></textarea><br>
+                    <input type="submit" class="value2" value="Submit">
+                  </form>
+                </div>
+              </div>
+
+            </span>
+            <p class="middleText">Explore, Imagine, Create</p>
+          </header>
+          <div class="vertical-center">
+            <button class="q"><a href="./bloglist.html">All Posts</a></button>
+            &ensp;
+            <button class="q" id="myBtn2"> Create Posts</button>
+          </div>
+    
+    <!-- TODO: Include all your code for the header and home page here -->
+</body>
+
+
+<!--external js -->
+
+<script src="../js/index.js"></script>
+</html>
