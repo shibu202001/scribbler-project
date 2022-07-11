@@ -7,7 +7,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=shibu202001&label=Profile%20views&color=0e75b6&style=flat" alt="shibu202001" /> </p>
 
-- 🌱 I’m currently learning **HTML, CSS,JS, React, Data Science**
+- 🌱 I’m currently learning **HTML, CSS,JS, React,Java,Bootstrap**
 
 - 💬 Ask me about **Html,Css,Js,React**
 
